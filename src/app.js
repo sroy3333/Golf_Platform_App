@@ -21,7 +21,7 @@ const limiter = rateLimit({
 
 app.use(limiter);
 app.use(cors({
-  origin: "https://golf-platform-app-inky.vercel.app",
+  origin: process.env.FRONTEND_URL,
   credentials: true
 }));
 app.use(express.json());
