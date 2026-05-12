@@ -20,11 +20,6 @@ const limiter = rateLimit({
 
 
 app.use(limiter);
-
-app.use(cors({
-  origin: "golf-platform-backend.onrender.com/api",
-  credentials: true
-}));
 app.use(cors());
 app.use(express.json());
 
